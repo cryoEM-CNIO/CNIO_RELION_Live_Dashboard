@@ -16,6 +16,8 @@ Download relion\_it.py and put in your path
 
 ## Run the script
 
+From your relion project directory:
+
 `conda activate relion_dashboard`  
 **`relion_live.py`**
 
