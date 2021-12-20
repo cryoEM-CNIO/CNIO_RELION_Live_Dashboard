@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 
-'''
-TODO
-# Index starts at 0... fix
-
-'''
-
 ### Setup
 import os
 import pandas as pd
