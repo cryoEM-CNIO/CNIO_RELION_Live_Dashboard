@@ -40,7 +40,7 @@ app.layout = html.Div([
     html.Div([
         dcc.Graph(id='progress_graph', figure={}),
         ], style={'width': '70%', 'display': 'inline-block', 'vertical-align': 'middle' , 'marginBottom':0, 'marginTop':-25}),
-    
+
     #Live updates
 
     dcc.Interval(
@@ -335,4 +335,4 @@ def load_df_and_graphs(xrange_minmax_values,totalmotion_minmax_values, import_va
 
 if __name__ == '__main__':
     #app.run_server(debug=True, use_reloader=True, host='10.222.112.48', port=8050)
-    app.run_server(debug=True, dev_tools_hot_reload = False, use_reloader=True, host='localhost', port=8050)
+    app.run_server(debug=False, dev_tools_hot_reload = False, use_reloader=True, host='localhost', port=8050)
