@@ -29,18 +29,14 @@ It admits two arguments (quite often the default parameters are ok):
 * **--host**: choose the IP address where you want the webapp to be hosted (default: localhost).
 
 Example:
-`relion_dashboard.py --host 01.010.101.010 --port 805`
-## Run the script
+`relion_live.py --host 01.010.101.010 --port 805`
 
-From your relion project directory:
+Open a web browser and access the server (localhost:8050)
 
-`conda activate relion_dashboard`  
-**`relion_live.py`**
-
-Open a web browser and access the server (localhost:8050) - _you can edit the script and change localhost for full IP address in order to access from another computer in the network_
-
-## Display images for micrograph and CTF
+## Displaying images for micrograph and CTF
 
 In order for this to work, you need to create png files for every image and ctf in the motioncorr and ctffind folders, next to mrc/ctf files and with the same name.
 
-To do this we use an external job from the relion GUI to run **png\_out.py** so you can include it in your relion\_it.py schedule (include folder+job.star and modify scheme.star).
+To do this we use an external job type from the relion GUI to run **png\_out.py**
+
+If you want to include it in your relion\_it.py schedule use the Schemes folder in this repository.
